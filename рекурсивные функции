@@ -1,0 +1,29 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+  string toP(int n, int p)
+{
+    if (n == 0) return "";
+    return toP(n/p,p) + to_string(n%p);
+}
+  {
+    do
+    {
+      res0 = IntToStr(num%p) + res0;
+      num/=p;
+    }
+    while (num>0);
+    res += res0 + " (" + IntToStr(p) + ")";
+  }
+  else
+    if (p==1)
+    {
+      for (UINT i = 0; i < num; i++)
+        res0 += "0";
+      res += res0 + " (1)";
+    }
+  else
+    res = "Основание системы счисления p должно быть больше 0 и меньше 10.";
+  return res;
+}
